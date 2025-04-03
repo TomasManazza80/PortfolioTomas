@@ -35,7 +35,7 @@ export const projects = [
         techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
         github: "https://github.com/nuIIpointerexception/www.seekvisualartist.com",
         demo: "https://www.seekvisualartist.com/",
-        image: "/projects/portfolio.webp",
+        image: "/projects/oftalmologia.jpg",
         available: true,
     },
     {
@@ -46,7 +46,7 @@ export const projects = [
         technologies: [SiCplusplus, SiRust, SiNeovim],
         techNames: ["C++", "Rust", "Neovim"],
         techLinks: ["https://cplusplus.com/", "https://www.rust-lang.org/", "https://neovim.io/"],
-        github: "https://github.com/nuIIpointerexception/codewars",
+        github: "https://github.com/TomasManazza80",
         demo: "https://www.codewars.com/",
         image: "/projects/codewars.webp",
         available: true,

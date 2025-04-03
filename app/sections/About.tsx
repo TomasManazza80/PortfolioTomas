@@ -11,7 +11,7 @@ const About = () => {
         >
             <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
                 <AnimatedTitle
-                    text={"full stack dev"}
+                    text={"Full Stack Dev"}
                     className={
                         "mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
                     }
@@ -19,21 +19,42 @@ const About = () => {
                     charSpace={"mr-[0.001em]"}
                 />
 
-                <div className="mx-auto flex w-[100%] flex-col lg:max-w-[1200px] lg:flex-row lg:gap-20">
-                    <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[24px] ">
-                        <AnimatedBody text="My passion lies in creating software that is both beautiful and functional. I’ve been designing for over 8 years and recently started getting into programming." />
+<div className="mx-auto flex w-[100%] flex-col lg:max-w-[1200px]">
+    {/* Primera línea (imagen + primer texto) - Alineación horizontal */}
+    <div className="flex flex-col lg:flex-row lg:gap-20 items-start">
+        {/* Imagen */}
+        <img 
+            src="\backgorund\tomas3.png" 
+            style={{ 
+                borderRadius: "10%", 
+                width: "300px", 
+                height: "auto",
+                marginTop: "70px",
+                paddingBottom: "0px"
+            }}  
+            alt="Foto de Tomás Manazza" 
+            className="mb-6 lg:mb-0"
+        />
 
-                        <AnimatedBody
-                            delay={0.1}
-                            text="Whether I’m designing a sleek user interface or coding a complex application, I’m always striving to create something unique and innovative. I love experimenting with new technologies and staying up-to-date with the latest trends in the tech world."
-                        />
+        {/* Primer texto */}
+        <div style={{ marginTop: "120px" }} className="text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:text-[20px] lg:text-[24px]">
+            <AnimatedBody text="¡Encantado de conocerte! Mi nombre es Tomás Manazza y soy estudiante de Ingeniería en Informática, con experiencia como desarrollador full-stack y una especialización en desarrollo Backend." />
+        </div>
+    </div>
 
-                        <AnimatedBody
-                            delay={0.2}
-                            text="Right now, I’m working on some exciting projects that I can’t wait to share with you. But I’m always open to new opportunities and collaborations."
-                        />
-                    </div>
-                </div>
+    {/* Resto del texto (debajo, en columna completa) */}
+    <div className="flex flex-col gap-4 mt-6 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:gap-6 md:text-[20px] lg:text-[24px]">
+        <AnimatedBody
+            delay={0.1}
+            text="Además de mi experiencia como desarrollador Full Stack, he trabajado en diversos proyectos que me han permitido fortalecer mis habilidades técnicas y colaborar en equipos dinámicos. Mi enfoque en el desarrollo Backend se complementa con un conocimiento sólido del Frontend, lo que me permite entregar soluciones completas y funcionales. He implementado APIs REST, optimizado procesos de desarrollo y trabajado con metodologías ágiles como Scrum para garantizar la eficiencia y el éxito de los proyectos."
+        />
+
+        <AnimatedBody
+            delay={0.2}
+            text="Soy una persona proactiva, apasionada por la innovación tecnológica y comprometida con el aprendizaje continuo. Me motiva resolver problemas complejos y traducir ideas en soluciones concretas que impulsen el desarrollo de las empresas. Mi meta es contribuir al crecimiento y éxito de proyectos desafiantes mientras perfecciono mis habilidades profesionales."
+        />
+    </div>
+</div>
             </div>
         </section>
     );

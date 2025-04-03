@@ -6,11 +6,11 @@ interface LogoProps {
   height?: number;
 }
 
-const Logo: React.FC<LogoProps> = ({ width = 100, height = 100 }) => {
+const Logo: React.FC<LogoProps> = ({ width = 50, height = 50 }) => {
     return (
         <Image
-            className={`w-${width} h-${height}`}
-            src="/logo.svg"
+            className={`w-50 h-50 `}
+            src="/logoEmpty.png"
             alt="Logo"
             width={width}
             height={height}

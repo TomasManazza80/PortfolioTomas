@@ -68,7 +68,7 @@ export default function Home() {
             <main
                 className="flex flex-col items-center justify-center bg-black"
             >
-                <h1 style={{ backgroundColor: "transparent" }}>TOMAS MANAZZA</h1>
+               
                 <Hero />
                 <About />
                 <Work />

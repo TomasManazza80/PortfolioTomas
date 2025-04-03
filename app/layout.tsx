@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     ],
     colorScheme: "dark",
     openGraph: {
-        title: "Seek Visual Artist - Designer and Developer",
+        title: "Seek Visual Artist - Full Stack Developer",
         description:
       "Hobby Designer and Software Engineer, currently at Neumann Kaffee Gruppe. Focused on immersive experiences, studying in Hamburg, Germany.",
         url: "https://www.seekvisualartist.com/",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
                 url: "./public/metadata.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Seek Visual Artist - Designer and Developer",
+                alt: "Seek Visual Artist - Full Stack Developer",
             },
         ],
         locale: "en-US",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Seek Visual Artist - Designer and Developer",
+        title: "Seek Visual Artist - Full Stack Developer",
         description:
       "Hobby Designer and Software Engineer, currently at Neumann Kaffee Gruppe. Focused on immersive experiences, studying in Hamburg, Germany.",
         creator: "SeekVFX",

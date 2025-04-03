@@ -70,15 +70,19 @@ const PreLoader: React.FC = () => {
     }, []); // Empty dependency array to run the animation only on mount
 
     return (
+        
         <div
-            className="preloader gap-[5px] overflow-hidden text-[14px] sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
-            style={{
-                height: "100vh",
-                width: "100%",
-                background: "#000000",
-                color: "#e5ebf2",
-                position: "fixed",
-                bottom: 0,
+
+
+        
+        className="preloader gap-[5px] overflow-hidden text-[14px] sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
+        style={{
+            height: "100vh",
+            width: "100%",
+            background: "#000000",
+            color: "#e5ebf2",
+            position: "fixed",
+            bottom: 0,
                 left: 0,
                 right: 0,
                 zIndex: 55,
@@ -87,19 +91,26 @@ const PreLoader: React.FC = () => {
                 alignItems: "center",
                 overflow: "hidden !important",
             }}
-        >
+            >
+            
+              
+
             <div
                 className="texts-container w-500 flex h-60 items-center justify-center gap-[5px] overflow-hidden text-[14px] font-bold text-[#e4ded7] opacity-0 sm:gap-[10px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
                 style={{
                     height: "60px",
                 }}
             >
-                <span>Developer</span>
-                <span> / </span>
-                <span>Designer</span>
+                
+                <span>Tomás Manazza</span>
+                <span> - </span>
+                <span>Full Stack Developer</span>
                 <div className="sub hidden"></div>
             </div>
+
+            
         </div>
+        
     );
 };
 
