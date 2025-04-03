@@ -24,17 +24,19 @@ const About = () => {
     <div className="flex flex-col lg:flex-row lg:gap-20 items-start">
         {/* Imagen */}
         <img 
-            src="\backgorund\tomas3.png" 
-            style={{ 
-                borderRadius: "10%", 
-                width: "300px", 
-                height: "auto",
-                marginTop: "70px",
-                paddingBottom: "0px"
-            }}  
-            alt="Foto de Tomás Manazza" 
-            className="mb-6 lg:mb-0"
-        />
+  src="\backgorund\tomas.png" 
+  alt="Foto de Tomás Manazza"
+  style={{
+    borderRadius: "50%",          // Forma circular perfecta
+    width: "300px",               // Diámetro del círculo
+    height: "300px",              // Mismo valor que width para mantener proporción 1:1
+    marginTop: "70px",            // Margen superior
+    objectFit: "cover",           // Ajuste de imagen sin deformación
+    objectPosition: "center",     // Centra la imagen en el círculo
+    display: "block",             // Elimina espacio inferior por defecto
+    border: "3px solid #e4ded7"   // Borde opcional (mismo color que tu texto)
+  }}
+/>
 
         {/* Primer texto */}
         <div style={{ marginTop: "120px" }} className="text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:text-[20px] lg:text-[24px]">
