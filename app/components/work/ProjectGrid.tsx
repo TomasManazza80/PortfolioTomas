@@ -5,7 +5,10 @@ import React from "react";
 const ProjectGrid = () => {
     return (
         <>
+        <h1 style={{color: "#e4ded7", fontSize: "clamp(2.5rem, 6vw, 6rem)", fontWeight: "bold", textAlign: "center", marginBottom: "100px", marginTop: "0px "}}>Mis proyectos</h1>
             <div className="mb-10 flex gap-16 text-[#e4ded7] md:mb-16  lg:mb-20 ">
+
+
                 <h4
                     className={`text-[16px] md:text-[20px] lg:text-[34px] ${"text-[#e4ded7]"}`}
                 >

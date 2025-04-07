@@ -27,10 +27,12 @@ const About = () => {
   src="\backgorund\tomas.png" 
   alt="Foto de Tomás Manazza"
   style={{
-    borderRadius: "50%",          // Forma circular perfecta
+    boxShadow: "0px 0px 40px rgb(255, 255, 255)",
+    borderRadius: "25%",          // Forma circular perfecta
     width: "300px",               // Diámetro del círculo
     height: "300px",              // Mismo valor que width para mantener proporción 1:1
-    marginTop: "70px",            // Margen superior
+    marginTop: "70px", 
+    marginBottom: "90px",           // Margen superior
     objectFit: "cover",           // Ajuste de imagen sin deformación
     objectPosition: "center",     // Centra la imagen en el círculo
     display: "block",             // Elimina espacio inferior por defecto
