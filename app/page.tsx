@@ -5,7 +5,7 @@ import { useEffectOnce, useEventListener } from 'usehooks-ts';
 
 import PreLoader from "./components/other/PreLoader";
 import useBlobity from "./components/blobity/useBlobity";
-
+import Titulos from "./sections/titulos.tsx";
 import Blur from "./components/overlay/Blur";
 import Color from "./components/overlay/Color";
 
@@ -72,8 +72,12 @@ export default function Home() {
                 <Hero />
                 <About />
                 
+            
+                
+                <Titulos/>
                 <Work />
                 <Tools />
+
                 { /* <Blog /> TODO: Low Priority */ }
                 <Contact />
                 <Footer />

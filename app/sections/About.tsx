@@ -24,13 +24,15 @@ const About = () => {
     <div className="flex flex-col lg:flex-row lg:gap-20 items-start">
         {/* Imagen */}
         <img 
-  src="\backgorund\tomas.png" 
+  src="\backgorund\tomas7.jpeg" 
   alt="Foto de Tomás Manazza"
   style={{
+
     boxShadow: "0px 0px 40px rgb(255, 255, 255)",
     borderRadius: "25%",          // Forma circular perfecta
     width: "300px",               // Diámetro del círculo
-    height: "300px",              // Mismo valor que width para mantener proporción 1:1
+    height: "300px", 
+
     marginTop: "70px", 
     marginBottom: "90px",           // Margen superior
     objectFit: "cover",           // Ajuste de imagen sin deformación

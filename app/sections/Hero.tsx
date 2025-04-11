@@ -1,62 +1,70 @@
 import { spaceGrotesk } from "../fonts/spaceGrotesk";
 import { motion } from "framer-motion";
-import Logo from "../components/svg/Logo";
 import HeroBackground from "../components/background/HeroBackground";
 import React from "react";
-import Link from "next/link";
-import {SiGithub} from "react-icons/si";
 
-import imagen from '../../public/backgorund/tomas.png';
 const Hero = () => {
-    return (
-        <motion.section
-            className="relative z-10 flex h-[100vh] w-full justify-center"
-            id="home"
-            initial="initial"
-            animate="animate"
+  return (
+    <motion.section
+      className="relative z-10 flex h-[100vh] w-full justify-center"
+      id="home"
+      initial="initial"
+      animate="animate"
+    >
+      <HeroBackground />
+      <div className="mt-20 flex flex-col items-center justify-center sm:mt-0">
+        <div
+          className={`relative flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}
         >
-            <HeroBackground />
-            <div className="mt-10 flex flex-col items-center justify-center sm:mt-0">
-  <div
-    className={`relative flex flex-col items-center justify-center ${spaceGrotesk.className} pointer-events-none`}
-  >
-    {/* <Logo /> */}
-    <h1
-      style={{
-        marginBottom: "50px",
-        fontSize: "clamp(2.5rem, 6vw, 6rem)", // Ajuste dinámico
-        fontWeight: "bold",
-        textAlign: "center",
-      }}
-    >
-      TOMÁS MANAZZA
-    </h1>
-    <h2
-      style={{
-        fontSize: "clamp(1rem, 2.5vw, 1.5rem)", // Tamaño responsivo
-        color: "#555", // Contraste accesible
-        textAlign: "center",
-      }}
-    >
-      Full Stack Developer
-    </h2>
-
-    <Link
-                                    href={"https://github.com/TomasManazza80"}
-                                    target="_blank"
-                                    aria-label="Open GitHub Repository"
-                                    className="rounded-full w-[20px] bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                                    data-blobity
-                                    data-blobity-radius="35"
-                                    data-blobity-offset-x="4"
-                                    data-blobity-offset-y="4"
-                                    data-blobity-magnetic="false">
-                                    <SiGithub/>
-                                </Link>
-  </div>
-</div>
-        </motion.section>
-    );
+          <h1
+            style={{
+              height: "auto",
+              padding: "10px 20px",
+              marginBottom: "10px",
+              fontSize: "clamp(3rem, 8vw, 4rem)", // Ajustado el tamaño de la fuente
+              fontWeight: "bold",
+              textAlign: "center",
+              position: "relative",
+              top: "-60px", // Ajustado el posicionamiento
+              backgroundColor: "rgba(17, 17, 17, 0.5)",
+              borderRadius: "50px",
+              display: "inline-block",
+              lineHeight: "1.2",
+            }}
+          >
+            TOMÁS MANAZZA
+          </h1>
+          <img
+            src="\backgorund\tomas9.png"
+            style={{
+              boxShadow: "0px 0px 30px rgb(255, 255, 255)", // Ligero ajuste al shadow
+              width: "200px", // Reducido el tamaño de la imagen
+              height: "200px",
+              objectFit: "cover",
+              borderRadius: "50%",
+              marginBottom: "10px",
+              position: "relative",
+              top: "-33px",
+            }}
+            alt=""
+          />
+          <h2
+            style={{
+              fontSize: "clamp(1rem, 3vw, 1.2rem)", // Ajustado el tamaño de la fuente
+              color: "#e4ded7",
+              textAlign: "center",
+              marginBottom: "0px",
+              marginTop: "0px",
+              position: "relative",
+              top: "-15px",
+            }}
+          >
+            Full Stack Developer
+          </h2>
+        </div>
+      </div>
+    </motion.section>
+  );
 };
 
 export default Hero;
